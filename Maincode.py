@@ -32,7 +32,8 @@ def labeling_tweets(temperature,top_p,n_of_tweets):
         The aim is to visualize how different conceptualizations of the body are constructed, 
         stabilized, or contested within biomedical discourse on social media.
         short tell what the provided twiiter post talks about
-        avoid talking like: the provided post talks about..."""),
+        avoid talking like: the provided post talks about...
+        answer in english"""),
         ("human", "{sentence}")]
 
     prompt_template = ChatPromptTemplate.from_messages(messages)
