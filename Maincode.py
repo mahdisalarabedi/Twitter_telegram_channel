@@ -30,7 +30,9 @@ def labeling_tweets(temperature,top_p,n_of_tweets):
         framework combining semiotics (Saussure),
         medical anthropology (Scheper-Hughes & Lock), and discourse theory (Laclau & Mouffe). 
         The aim is to visualize how different conceptualizations of the body are constructed, 
-        stabilized, or contested within biomedical discourse on social media."""),
+        stabilized, or contested within biomedical discourse on social media.
+        short tell what the provided twiiter post talks about
+        avoid talking like: the provided post talks about..."""),
         ("human", "{sentence}")]
 
     prompt_template = ChatPromptTemplate.from_messages(messages)
