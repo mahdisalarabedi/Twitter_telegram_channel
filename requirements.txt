@@ -2,6 +2,5 @@ langchain_core
 langchain_openai
 streamlit
 pandas
-random
 wordcloud
 matplotlib
