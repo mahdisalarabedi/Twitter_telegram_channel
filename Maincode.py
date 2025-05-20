@@ -25,12 +25,12 @@ def labeling_tweets(temperature,top_p,n_of_tweets):
     list_of_messages=data["messages"]
 
     messages =[
-        ("system", "you are an analyzer and must analyze a corpus of tweets written by physicians about
+        ("system", """you are an analyzer and must analyze a corpus of tweets written by physicians about
         patients’ bodies through an integrated 
         framework combining semiotics (Saussure),
         medical anthropology (Scheper-Hughes & Lock), and discourse theory (Laclau & Mouffe). 
         The aim is to visualize how different conceptualizations of the body are constructed, 
-        stabilized, or contested within biomedical discourse on social media."),
+        stabilized, or contested within biomedical discourse on social media."""),
         ("human", "{sentence}")]
 
     prompt_template = ChatPromptTemplate.from_messages(messages)
