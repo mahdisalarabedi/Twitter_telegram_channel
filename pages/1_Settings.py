@@ -14,7 +14,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.session_state.number_of_tweets=st.number_input(label="", min_value=10)
+st.session_state.number_of_tweets=st.number_input(label="", min_value=10, max_value=199)
 st.markdown(
     """
     <div style='direction: rtl; text-align: right; font-size:18px;'>
