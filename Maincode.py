@@ -17,7 +17,7 @@ def labeling_tweets(temperature,top_p,n_of_tweets):
     top_p=top_p)
 
     #loading the history of the Twitter channel
-    with open(r'T.json',"r",encoding="utf-8") as f: 
+    with open(r'selected_tweets.json',"r",encoding="utf-8") as f: 
         data=json.load(f)
 
 
