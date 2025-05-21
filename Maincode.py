@@ -21,7 +21,7 @@ def labeling_tweets(temperature,top_p,n_of_tweets):
         data=json.load(f)
 
 
-    random_ids = [random.randint(34421, 39523) for _ in range(n_of_tweets)]
+    random_ids = [random.randint(144370, 144458) for _ in range(n_of_tweets)]
     random_ids.sort()
     list_of_messages=data["messages"]
 
