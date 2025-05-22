@@ -10,15 +10,17 @@ if st.session_state.index < len(keys):
     current_value = st.session_state.outcomes[current_key]
     st.markdown(
         f"""<div style='direction: rtl; text-align: right; font-size:18px;'>
-        the tweet is current{current_key} \n
+        the tweet is {current_key} \n
+        and it is {current_value[0].values()}
         </div>
         """,
         unsafe_allow_html=True)
-    for x, y in current_value.items():
-        st.markdown(
+    if current_value[0].values() != 'not related':
+        for x, y in current_value[1].items():
+            st.markdown(
                 f"""<div style='direction: ltr; text-align: left; font-size:18px;'>
                 the sigfnifier is:\n {x} \n
-                the signifed and the category are:
+                the signifed and category:
                 {y}
                                                 </div>
                 """,
